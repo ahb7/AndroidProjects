@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abdullah.backupcontactsapp.MainActivity">
+
+    <Button
+        android:text="Refresh"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/backupButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/refreshButton"
+        android:layout_toRightOf="@+id/backupButton"
+        android:layout_toEndOf="@+id/backupButton"
+        android:onClick="refreshDB"
+        android:clickable="false" />
+
+    <Button
+        android:text="Backup Contacts"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/backupButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="createDatabase" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/searchButton"
+        android:onClick="searchContacts"
+        android:clickable="false"
+        android:layout_below="@+id/phoneEditId"
+        android:layout_toRightOf="@+id/phoneId"
+        android:layout_toEndOf="@+id/phoneId" />
+
+    <TextView
+        android:text="Phone:"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:id="@+id/phoneId"
+        android:layout_below="@+id/backupButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/outId"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Ignore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_alignRight="@+id/searchButton"
+        android:layout_alignEnd="@+id/searchButton"
+        android:id="@+id/buttonIgnore"
+        android:onClick="ignore" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/nameId"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="out2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/out2Id"
+        android:layout_below="@+id/nameEditId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditId"
+        android:layout_alignRight="@+id/buttonAdd"
+        android:layout_alignEnd="@+id/buttonAdd"
+        android:id="@+id/buttonCall"
+        android:onClick="makeCall" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/phoneEditId"
+        android:layout_alignBaseline="@+id/phoneId"
+        android:layout_alignBottom="@+id/phoneId"
+        android:layout_toRightOf="@+id/phoneId"
+        android:layout_toEndOf="@+id/phoneId" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd"
+        android:onClick="addContact"
+        android:layout_alignTop="@+id/outId"
+        android:layout_alignLeft="@+id/searchButton"
+        android:layout_alignStart="@+id/searchButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/nameEditId"
+        android:layout_alignTop="@+id/nameId"
+        android:layout_alignLeft="@+id/buttonCall"
+        android:layout_alignStart="@+id/buttonCall" />
+
+</RelativeLayout>

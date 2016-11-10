@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Title"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle" />
+
+    <TextView
+        android:text="Year"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewYear" />
+
+    <TextView
+        android:text="Director"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDir" />
+
+    <TextView
+        android:text="Rating"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewRating" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KanbanProjMgmtApp</string>
+    <string name="title_activity_backlog">Backlog</string>
+    <string name="title_activity_breakdown">Breakdown</string>
+    <string name="title_activity_answer">Answer</string>
+    <string name="title_activity_validate">Validate</string>
+    <string name="title_activity_addtask">Addtask</string>
+</resources>
